@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0b023d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: thistle;
+    position: absolute;
+    align-self: flex-start;
+}
+
+.gameboard {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+    border: 5px solid #000000;
+}
+
+.color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.verde {
+    background: #11a73e;
+}
+
+.verde.light {
+    background: #32eb22;
+}
+
+.rojo {
+    background: #a01515;
+}
+
+.rojo.light {
+    background: #f30000;
+}
+
+.amarillo {
+    background: #e5be01;
+}
+
+.amarillo.light {
+    background: #ffff00;
+}
+
+.celeste {
+    background: #248c96;
+}
+
+.celeste.light {
+    background: #00e5ff;
+}
+
+.btn-start {
+    width: 400px;
+    height: 100px;
+    background: #6665b1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    border: 1px solid black;
+}
+
+.btn-start:hover {
+    background: #2f3061;
+    color: white;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
